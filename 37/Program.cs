@@ -30,7 +30,7 @@ int[] getProductOfPairsOfNumbers(int[] array)
     int[] productOfNumbersArray = new int[newArrayLength];
     for (int i = 0; i < newArrayLength; i++)
     {
-        if (array[i] != array[array.Length - i - 1])
+        if (i != array.Length - i - 1)
         {
         productOfNumbersArray[i] = array[i] * array[array.Length - i - 1];
         }
